@@ -6,7 +6,7 @@
 [4]: https://github.com/jerrykuku/luci-theme-argon/pulls
 [5]: https://img.shields.io/badge/Issues-welcome-brightgreen.svg
 [6]: https://github.com/jerrykuku/luci-theme-argon/issues/new
-[7]: https://img.shields.io/badge/release-v2.1-blue.svg?
+[7]: https://img.shields.io/badge/release-v1.6.3-blue.svg?
 [8]: https://github.com/jerrykuku/luci-theme-argon/releases
 [9]: https://img.shields.io/github/downloads/jerrykuku/luci-theme-argon/total
 [10]: https://img.shields.io/badge/Contact-telegram-blue
@@ -18,19 +18,13 @@
 [![Release Count][9]][8]
 [![Contact Me][10]][11]
 
-![](/Screenshots/pc1.jpg)
-![](/Screenshots/phone.jpg)
 
 A new Luci theme for LEDE/OpenWRT  
 Argon is a clean HTML5 theme for LuCI. It is based on luci-theme-material and Argon Template  
 
-
-The old version is still in another branch call old. If you need that you can checkout that branch.
-
 ## Notice
-v2.01 Adapt to official 19.07 stable version (not snapshot) LuCI openwrt-19.07 branch (git-20.006.26738-35aa527).  
-v2.1 Adapt to official mainline snapshot.  
-You can checkout branch 18.06 for  OpenWRT 18.06 or lean 19.07.
+
+This branch only matches lean openwrt LuCI 18.06.
 
 ## How to build
 
@@ -44,41 +38,30 @@ make menuconfig #choose LUCI->Theme->Luci-theme-argon
 make -j1 V=s  
 ```
 
-####Openwrt SnapShots
-```
-cd openwrt/package
-git clone https://github.com/jerrykuku/luci-theme-argon.git  
-make menuconfig #choose LUCI->Theme->Luci-theme-argon  
-make -j1 V=s  
-```
-
 ## Install 
-### For Lean openwrt
+
+### For Lean openwrt 18.06 LuCI
 ```
-wget --no-check-certificate https://github.com/jerrykuku/luci-theme-argon/releases/download/1.5.1/luci-theme-argon_1.5.1-01-20200331_all.ipk
-opkg install luci-theme-argon_1.5.1-01-20200331_all.ipk
+wget --no-check-certificate https://github.com/jerrykuku/luci-theme-argon/releases/download/v1.6.3/luci-theme-argon_1.6.3-20200725_all.ipk
+opkg install luci-theme-argon*.ipk
 ```
 
-### For openwrt 19.07 stable LuCI branch (git-20.006.26738-35aa527)
-```
-wget --no-check-certificate https://github.com/jerrykuku/luci-theme-argon/releases/download/v2.01/luci-theme-argon_2.01-20200203_all.ipk
-opkg install luci-theme-argon_2.01-20200203_all.ipk
-```
+## Update log 2020.07.25 [18.06] V1.6.3 
 
-### For openwrt 19.07 Snapshots LuCI master (git-20.033.77428-3d63732)
-```
-wget --no-check-certificate https://github.com/jerrykuku/luci-theme-argon/releases/download/v2.1/luci-theme-argon_2.1-20200206_all.ipk
-opkg install luci-theme-argon_2.1-20200206_all.ipk
-```
+- New login theme, Request background imge from bing.com, Auto change everyday. 
+- New theme icon 
+- Add more menu category  icon 
+- Fix font-size and padding margin 
+- Restructure css file 
+- Auto adapt to dark mode
+- Add blur effect for login form 【v1.6.3】
 
-## Update log 2020.03.31 [18.06]
-1. v1.5.1 Fix display error.
-2. v1.5.1 Add darkmode following the system.
-
-## More Screenshots
-
-![](/Screenshots/pc2.jpg)
-![](/Screenshots/pc3.jpg)
+## Screenshots 
+![](/Screenshots/pc/screenshot1.jpg)
+![](/Screenshots/pc/screenshot2.jpg)
+![](/Screenshots/pc/screenshot3.jpg)
+![](/Screenshots/phone/Screenshot_1.jpg)
+![](/Screenshots/phone/Screenshot_2.jpg)
 
 ## Thanks to 
 luci-theme-material: https://github.com/LuttyYang/luci-theme-material/
