@@ -152,11 +152,6 @@ li {
 
 .login-page {
     height: 100%;
-    background-image: url(../img/blank.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    transition: all 0.5s;
 
     .video {
         position: absolute;
@@ -187,6 +182,19 @@ li {
         &.mute{
             background-image: url(../img/volume_off.svg);
         }
+    }
+
+    .main-bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-image: url(../img/blank.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: all 0.5s;
     }
 
     .login-container {
@@ -657,6 +665,8 @@ footer {
                             -moz-osx-font-smoothing: grayscale;
                             position: absolute;
                             left: 0.8rem;
+                            content: "\e915";
+                            color: #5e72e4;
                         }
 
                         &::after {
@@ -2817,9 +2827,9 @@ td>.ifacebadge {
     padding: 1rem;
     line-height: 1.4em;
     font-size: small;
-    color: #fff;
+    color: #1e1e1e;
     border-radius: 0;
-    background-color: #1e1e1e;
+    background-color: #fff;
     border: none;
     outline: none;
 }
@@ -4065,6 +4075,10 @@ input[name="nslookup"] {
         background-color: transparent;
         outline: 0;
         box-shadow: none;
+    }
+
+    select {
+        background-color: #1e1e1e !important;
     }
 
     #cbi-dropbear h2,
